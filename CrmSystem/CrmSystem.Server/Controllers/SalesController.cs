@@ -6,21 +6,21 @@ using System.Web.Http.Cors;
 namespace CrmSystem.Server.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class HomeController : BaseController
+    public class SalesController : BaseController
     {
-        public HomeController(IUnitOfWork data) : base(data)
+        public SalesController(IUnitOfWork data) : base(data)
         {
         }
 
         [HttpGet]
-        public IHttpActionResult Index()
+        public IHttpActionResult AllSales()
         {
-            var publicProducts = this.data
-                .Products
+            var sales = this.data
+                .Sales
                 .All()
                 .ToList();
 
-            return this.Ok(publicProducts);
+            return this.Ok(sales);
         }
     }
 }
