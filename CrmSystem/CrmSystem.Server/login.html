@@ -3,15 +3,15 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-1.10.2.min.js"></script>
-    <script src="../Scripts/bootstrap.min.js"></script>
-    <script src="AngularJS/angular.js"></script>
-    <script src="AngularJS/angular-local-storage.min.js"></script>
-    <script src="AngularJS/authInterceptorService.js"></script>
-    <script src="AngularJS/login.js"></script>
-    <link href="style.css" rel="stylesheet" />
-</head>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="HTML/AngularJS/angular.js"></script>
+    <script src="HTML/AngularJS/angular-local-storage.min.js"></script>
+    <script src="HTML/AngularJS/authInterceptorService.js"></script>
+    <script src="HTML/AngularJS/login.js"></script>
+    <link href="HTML/identity/style.css" rel="stylesheet" />
+</head> 
 <body class="main" ng-app="loginApp">
     <div class="container-fluid" ng-controller="loginController">
         <div class="paddingT50">
@@ -41,18 +41,12 @@
                                        value="{{LoginBtnText}}" />
                             </div>
                         </div>
-                        <!--<span class="footer_para_left">
-                        <a href="">Create an account</a>.
-                        ...bleSure\TableSure.Web\Html\Test\DemoVideo\demoSignIn.html 2
-                        </span>-->
                         <div class="row">
                             <div class="col-lg-12">
                                 <p class="footer_para">
-                                    <a href="#" style="float:left">
-                                        Create an account</
-                                        a>
+                                    <a href="HTML/identity/signup.html" style="float:left">Create an account</a>
                                         Forgot Password?
-                                        <a href="">Click here</a>.
+                                        <a href="HTML/identity/forgot-password.html">Click here</a>.
                                 </p>
                             </div>
                         </div>
