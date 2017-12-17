@@ -37,7 +37,7 @@ signUpApp.factory('signUpService', ['$http', function ($http) {
     var signUpServiceFactory = {};
 
     signUpServiceFactory.saveRegistration = function (registration) {
-        return $http.post('/api/account/register', registration)
+        return $http.post('/api/account/register', registration);
     };
 
     return signUpServiceFactory;

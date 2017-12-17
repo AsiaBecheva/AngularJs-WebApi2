@@ -3,21 +3,21 @@ var changePasswordApp = angular.module('changePasswordApp', ['LocalStorageModule
 
 changePasswordApp.config(function ($httpProvider) {
     $httpProvider.interceptors.push('authInterceptorService');
-})
+});
 
 changePasswordApp.controller('changePasswordController', ['$scope', '$window', 'authService', function ($scope, $window, authService) {
     $scope.init = function () {
         $scope.isProcessing = false;
         $scope.SubmitBtnText = "Change Password";
-    }
+    };
 
     $scope.init();
 
     $scope.Password = {
         OldPassword: "",
         NewPassword: "",
-        ConfirmPassword:""
-    }
+        ConfirmPassword: ""
+    };
 
     $scope.ChangePassword = function () {
         $scope.isProcessing = true;
@@ -29,7 +29,7 @@ changePasswordApp.controller('changePasswordController', ['$scope', '$window', '
         }, function () {
             alert("Failed.Please try again.");
             $scope.init();
-        })
-    }
+        });
+    };
 
-}])
+}]);

@@ -247,10 +247,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -266,8 +269,15 @@
     <Content Include="HTML\AngularJS\signup.js" />
     <Content Include="HTML\AngularJS\user-role.js" />
     <Content Include="HTML\AngularJS\user.js" />
+    <Content Include="HTML\home\home.html" />
     <Content Include="HTML\identity\change-password.html" />
     <Content Include="HTML\identity\forgot-password.html" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\common\data.js" />
+    <Content Include="js\common\notifier.js" />
+    <Content Include="js\home\home-controller.js" />
+    <Content Include="js\home\products-service.js" />
     <Content Include="login.html" />
     <Content Include="HTML\identity\reset-password.html" />
     <Content Include="HTML\identity\role.html" />
@@ -287,7 +297,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\toastr.min.js.map" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
