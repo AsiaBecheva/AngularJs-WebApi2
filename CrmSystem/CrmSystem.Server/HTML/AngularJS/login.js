@@ -28,7 +28,7 @@ loginApp.controller('loginController', ['$scope', '$window', 'authService', func
 
         authService.login($scope.loginData).then(function (response) {
             alert("Login Successfully");
-            $window.location.href = "user.html";
+            $window.location.href = "/";
         }, function () {
             alert("Failed.Please try again.");
             $scope.init();

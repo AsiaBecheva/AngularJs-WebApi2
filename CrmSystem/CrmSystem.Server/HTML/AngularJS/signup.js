@@ -22,7 +22,7 @@ function ($scope, $window, signUpService) {
         $scope.RegisterBtnText = "Please wait...";
         signUpService.saveRegistration($scope.registration).then(function (response) {
             alert("Registration Successfully Completed. Please sign in to Continue.");
-            $window.location.href = "login.html";
+            $window.location.href = "../../login.html";
         }, function () {
             alert("Error occured. Please try again.");
             $scope.isProcessing = false;
