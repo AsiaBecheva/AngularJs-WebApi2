@@ -6,7 +6,6 @@ using System.Web.Http.Cors;
 namespace CrmSystem.Server.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [Authorize]
     public class ProjectsController : BaseController
     {
         public ProjectsController(IUnitOfWork data) : base(data)
