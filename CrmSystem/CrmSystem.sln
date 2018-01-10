@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSystem.Data", "CrmSystem.Data\CrmSystem.Data.csproj", "{A4F0BA1B-2318-46B2-BD29-02CC0140F665}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSystem.Server", "CrmSystem.Server\CrmSystem.Server.csproj", "{E1E65344-9019-4B38-89B7-824E149C606B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSystem.Tests", "CrmSystem.Tests\CrmSystem.Tests.csproj", "{F8E715BB-1622-47BC-8D06-313AAB2B9050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSystem.Client", "CrmSystem.Client\CrmSystem.Client.csproj", "{F628047A-474B-40AB-A4D3-658219B117BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F8E715BB-1622-47BC-8D06-313AAB2B9050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E715BB-1622-47BC-8D06-313AAB2B9050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E715BB-1622-47BC-8D06-313AAB2B9050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F628047A-474B-40AB-A4D3-658219B117BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F628047A-474B-40AB-A4D3-658219B117BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F628047A-474B-40AB-A4D3-658219B117BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F628047A-474B-40AB-A4D3-658219B117BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
