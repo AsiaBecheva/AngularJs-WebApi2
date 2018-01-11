@@ -1,0 +1,28 @@
+﻿<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="container">
+
+    <div class="row jumbotron jumbotron-fluid">
+        <div class="panel panel-primary center-block col-md-6">
+            <div class="panel-heading text-center">
+                <h2 class="panel-title text-center">Products</h2>
+            </div>
+                <div class="card text-white bg-primary center-block" style="width:900px; margin-left:100px;">
+                    <table class="table">
+                        <tr class="card-header">
+                            <th>Name</th>
+                            <th>Info</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr ng-repeat="product in vm.products track by $index">
+                            <td>{{product.Name}}</td>
+                            <td width="80% !important">{{product.Info}}</td>
+                            <td>{{product.Price}}</td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    </div>
+</div>
+
+
